@@ -84,6 +84,7 @@ namespace Haziq_FinalProject
             this.labelNameGunkan2 = new System.Windows.Forms.Label();
             this.pictureBoxGunkan2 = new System.Windows.Forms.PictureBox();
             this.panelGunkan3 = new System.Windows.Forms.Panel();
+            this.buttonMinusGunkan3 = new System.Windows.Forms.Button();
             this.textBoxGunkan3 = new System.Windows.Forms.TextBox();
             this.buttonGunkan3 = new System.Windows.Forms.Button();
             this.labelPriceGunkan3 = new System.Windows.Forms.Label();
@@ -771,6 +772,7 @@ namespace Haziq_FinalProject
             // panelGunkan3
             // 
             this.panelGunkan3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panelGunkan3.Controls.Add(this.buttonMinusGunkan3);
             this.panelGunkan3.Controls.Add(this.textBoxGunkan3);
             this.panelGunkan3.Controls.Add(this.buttonGunkan3);
             this.panelGunkan3.Controls.Add(this.labelPriceGunkan3);
@@ -780,6 +782,20 @@ namespace Haziq_FinalProject
             this.panelGunkan3.Name = "panelGunkan3";
             this.panelGunkan3.Size = new System.Drawing.Size(192, 179);
             this.panelGunkan3.TabIndex = 28;
+            // 
+            // buttonMinusGunkan3
+            // 
+            this.buttonMinusGunkan3.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMinusGunkan3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonMinusGunkan3.FlatAppearance.BorderSize = 0;
+            this.buttonMinusGunkan3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMinusGunkan3.Image = global::Haziq_FinalProject.Properties.Resources.minus;
+            this.buttonMinusGunkan3.Location = new System.Drawing.Point(54, 139);
+            this.buttonMinusGunkan3.Name = "buttonMinusGunkan3";
+            this.buttonMinusGunkan3.Size = new System.Drawing.Size(41, 31);
+            this.buttonMinusGunkan3.TabIndex = 6;
+            this.buttonMinusGunkan3.UseVisualStyleBackColor = false;
+            this.buttonMinusGunkan3.Click += new System.EventHandler(this.buttonMinusGunkan3_Click);
             // 
             // textBoxGunkan3
             // 
@@ -1715,5 +1731,6 @@ namespace Haziq_FinalProject
         private System.Windows.Forms.Label labelPriceMakimono5;
         private System.Windows.Forms.Label labelNameMakimono5;
         private System.Windows.Forms.PictureBox pictureBoxMakimono5;
+        private System.Windows.Forms.Button buttonMinusGunkan3;
     }
 }

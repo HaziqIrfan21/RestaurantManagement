@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Linq;
 
 namespace Haziq_FinalProject
 {
@@ -24,6 +22,7 @@ namespace Haziq_FinalProject
         bool foodDeleted = false;
 
         public List<food> foodList = new List<food>();
+        bool bGunkan3 = false;
 
         public MainForm()
         {
@@ -136,7 +135,7 @@ namespace Haziq_FinalProject
         {
             if (listBoxOrder.SelectedIndex == -1)
             {
-                MessageBox.Show("Must select item before clicking the delete button");
+                MessageBox.Show("You have not ordered anything. Try again");
             }
 
             if (listBoxOrder.SelectedIndex > -1)
@@ -438,39 +437,58 @@ namespace Haziq_FinalProject
 
                 MessageBox.Show("Please insert food amount");
             }
-         
+
         }
 
         private void buttonGunkan3_Click(object sender, EventArgs e)
         {
             try
             {
-
                 catagory = buttonGunkan.Text;
                 orderName = labelNameGunkan3.Text;
                 fullname = catagory + " " + orderName;
                 foodAmount = int.Parse(textBoxGunkan3.Text);
-                foodDeleteCost = price;
 
                 price = decimal.Parse(labelPriceGunkan3.Text) * foodAmount;
-                food gunkan3 = new food(fullname, foodAmount, price);
-
+              
                 if (foodAmount <= 0)
                 {
                     MessageBox.Show("Please insert correct food amount");
                 }
                 else
                 {
-                    for (int i = 0; i < foodAmount; i++)
+                    if (bGunkan3 == true)
                     {
-                        listBoxOrder.Items.Add(gunkan3.Fullname);
+                        foreach (var item in foodList)
+                        {
+                            if (item.Fullname == fullname)
+                            {
+                                for (int i = 0; i < foodAmount; i++)
+                                {
+                                    listBoxOrder.Items.Add(item.Fullname);
+                                }
+
+                                item.FoodAmount += foodAmount;
+                                item.Price += price;
+                            }
+                        }
+
+
                     }
 
-                    foodList.Add(gunkan3);
-                }
+                    if (bGunkan3 == false)
+                    {
+                        food gunkan3 = new food(fullname, foodAmount, price);
 
-                //My order
-                
+                        for (int i = 0; i < foodAmount; i++)
+                        {
+                            listBoxOrder.Items.Add(gunkan3.Fullname);
+                        }
+
+                        foodList.Add(gunkan3);
+                        bGunkan3 = true;
+                    }
+                }
             }
             catch (FormatException)
             {
@@ -478,87 +496,138 @@ namespace Haziq_FinalProject
                 MessageBox.Show("Please insert food amount");
             }
 
-           
-
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        private void buttonMinusGunkan3_Click(object sender, EventArgs e)
+{
+    try
+    {
 
+        catagory = buttonGunkan.Text;
+        orderName = labelNameGunkan3.Text;
+        fullname = catagory + " " + orderName;
+        foodAmount = int.Parse(textBoxGunkan3.Text);
+
+
+        price = decimal.Parse(labelPriceGunkan3.Text) * foodAmount;
+        foodDeleteCost = price * -1;
+
+        if (foodAmount <= 0)
+        {
+            MessageBox.Show("Please insert correct food amount");
         }
-
-        private void buttonBill_Click(object sender, EventArgs e)
+        else
         {
-            panelBill.Show();
-        }
-
-        private void labelBillExit_Click(object sender, EventArgs e)
-        {
-            panelBill.Hide();
-        }
-
-        private void labelBillExit_MouseEnter(object sender, EventArgs e)
-        {
-            labelBillExit.ForeColor = Color.White;
-        }
-
-        private void labelBillExit_MouseLeave(object sender, EventArgs e)
-        {
-            labelBillExit.ForeColor = Color.Black;
-        }
-
-        private void buttonOrder_Click(object sender, EventArgs e)
-        {
-
-            String.Format("{0:0.00}", labelCostAmount.Text);
-
-            listBoxOrder.Items.Clear();
-
-            foreach (var item in foodList)
+            if (foodDeleted == false)
             {
-               {
-               //Item.price is already the final price
-                    AddToListView(item.Fullname, item.FoodAmount - foodDeleteNumber, item.Price  );
-                }                             
+                foreach (var item in foodList.ToList())
+                {
+                    if (item.Fullname == fullname)
+                    {
+                        for (int i = foodAmount; i > 0; i--)
+                        {
+                            listBoxOrder.Items.Remove(item.Fullname);
+
+                        }
+
+                        item.FoodAmount -= foodAmount;
+                    }
+
+                }
+
             }
-            foodDeleted = false;
-            foodDeleteNumber = 0;
-            foodDeleteCost = 0;
-            foodList.Clear();
         }
 
-        private void AddToListView(string name, int qty, decimal price)
+
+    }
+    catch (FormatException)
+    {
+
+        MessageBox.Show("Please insert food amount");
+    }
+}
+
+private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+{
+
+}
+
+private void buttonBill_Click(object sender, EventArgs e)
+{
+    panelBill.Show();
+}
+
+private void labelBillExit_Click(object sender, EventArgs e)
+{
+    panelBill.Hide();
+}
+
+private void labelBillExit_MouseEnter(object sender, EventArgs e)
+{
+    labelBillExit.ForeColor = Color.White;
+}
+
+private void labelBillExit_MouseLeave(object sender, EventArgs e)
+{
+    labelBillExit.ForeColor = Color.Black;
+}
+
+private void buttonOrder_Click(object sender, EventArgs e)
+{
+
+    String.Format("{0:0.00}", labelCostAmount.Text);
+
+    listBoxOrder.Items.Clear();
+
+    foreach (var item in foodList)
+    {
         {
-
-            ListViewItem eachrow = new ListViewItem("" + autoID);
-            ListViewItem.ListViewSubItem rowName = new ListViewItem.ListViewSubItem(eachrow, name);
-            ListViewItem.ListViewSubItem rowQty = new ListViewItem.ListViewSubItem(eachrow, qty.ToString());
-            ListViewItem.ListViewSubItem rowPrice = new ListViewItem.ListViewSubItem(eachrow, price.ToString());
-
-            eachrow.SubItems.Add(rowName);
-            eachrow.SubItems.Add(rowQty);
-            eachrow.SubItems.Add(rowPrice);
-
-            decimal temp;
-            temp = decimal.Parse(rowPrice.Text);
-
-            decimal temp2;
-            temp2 = decimal.Parse(labelCostAmount.Text);
-
-            decimal total;
-            total = temp + temp2;
-
-            labelCostAmount.Text = total.ToString();
-
-            listViewBill.Items.Add(eachrow);
-
-            autoID += 1;
-
+            //Item.price is already the final price
+            AddToListView(item.Fullname, item.FoodAmount - foodDeleteNumber, item.Price + foodDeleteCost);
         }
+    }
 
-        private void flowLayoutPanelGunkan_Paint(object sender, PaintEventArgs e)
-        {
+    bGunkan3 = false;
+    foodAmount = 0;
+    foodDeleteNumber = 0;
+    foodDeleteCost = 0;
+    foodList.Clear();
+}
 
-        }
+private void AddToListView(string name, int qty, decimal price)
+{
+
+    ListViewItem eachrow = new ListViewItem("" + autoID);
+    ListViewItem.ListViewSubItem rowName = new ListViewItem.ListViewSubItem(eachrow, name);
+    ListViewItem.ListViewSubItem rowQty = new ListViewItem.ListViewSubItem(eachrow, qty.ToString());
+    ListViewItem.ListViewSubItem rowPrice = new ListViewItem.ListViewSubItem(eachrow, price.ToString());
+
+    eachrow.SubItems.Add(rowName);
+    eachrow.SubItems.Add(rowQty);
+    eachrow.SubItems.Add(rowPrice);
+
+    decimal temp;
+    temp = decimal.Parse(rowPrice.Text);
+
+    decimal temp2;
+    temp2 = decimal.Parse(labelCostAmount.Text);
+
+    decimal total;
+    total = temp + temp2;
+
+    labelCostAmount.Text = total.ToString();
+
+    listViewBill.Items.Add(eachrow);
+
+    autoID += 1;
+
+}
+
+private void flowLayoutPanelGunkan_Paint(object sender, PaintEventArgs e)
+{
+
+}
+
+
     }
 }

@@ -121,6 +121,9 @@
   <data name="Sushi_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\Sushi_50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Sushi_37" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Sushi_37.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Sushi_45" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\Sushi_45.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -130,11 +133,11 @@
   <data name="Sushi_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\Sushi_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sushi_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Sushi_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Sushi_33" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Sushi_33.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sushi_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Sushi_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Sushi_34" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Sushi_34.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sushi_30" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\Sushi_30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,9 +151,6 @@
   <data name="Sushi_28" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\Sushi_28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sushi_46" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Sushi_46.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Sushi_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\Sushi_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -160,23 +160,14 @@
   <data name="Sushi_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\Sushi_18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sushi_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Sushi_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sushi_47" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Sushi_47.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Sushi_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Sushi_17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sushi_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Sushi_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sushi_43" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Sushi_43.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sushi_23" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Sushi_23.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Sushi_44" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Sushi_44.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,26 +187,35 @@
   <data name="Sushi_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\Sushi_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sushi_34" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Sushi_34.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Sushi_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Sushi_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sushi_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Sushi_17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Sushi_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Sushi_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="lock2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sushi_37" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Sushi_37.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Sushi_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\Sushi_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sushi_43" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Sushi_43.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sushi_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Sushi_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sushi_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\Sushi_13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sushi_35" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Sushi_35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="minus-sign-inside-a-black-circle3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\minus-sign-inside-a-black-circle3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sushi_26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Sushi_26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sushi_47" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Sushi_47.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sushi_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\Sushi_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -250,8 +250,8 @@
   <data name="Sushi_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\Sushi_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sushi_44" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Sushi_44.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Sushi_35" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Sushi_35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="minus-sign-inside-a-black-circle2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\minus-sign-inside-a-black-circle2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -265,20 +265,23 @@
   <data name="Sushi_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\Sushi_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Sushi_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Sushi_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Sushi_31" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\Sushi_31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sushi_33" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Sushi_33.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sushi_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Sushi_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="minus-sign-inside-a-black-circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\minus-sign-inside-a-black-circle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sushi_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Sushi_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Sushi_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Sushi_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sushi_46" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Sushi_46.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sushi_23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Sushi_23.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="lock1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -289,13 +292,13 @@
   <data name="Sushi_41" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\Sushi_41.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sushi_26" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Sushi_26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Sushi_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Sushi_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sushi_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\Sushi_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="minus-sign-inside-a-black-circle3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\minus-sign-inside-a-black-circle3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="minus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\minus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
